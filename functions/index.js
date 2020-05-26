@@ -48,7 +48,7 @@ const helloWorld = functions.https.onRequest((request, response) => {
   // Add a new document in collection "cities" with ID 'LA'
   let setDoc = db
     .collection("main")
-    .doc("Jatin")
+    .doc("Prady")
     .set(data)
     .then((data) => console.log("created", data))
     .catch((err) => console.log("error", err));
