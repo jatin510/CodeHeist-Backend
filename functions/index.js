@@ -1,7 +1,12 @@
 const functions = require("firebase-functions");
-const admin = require("firebase-admin");
+var admin = require("firebase-admin");
 
-admin.initializeApp();
+var serviceAccount = require("/home/jatin/firebase/code-heist-ec207-firebase-adminsdk-25w91-acb840afa9.json");
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://code-heist-ec207.firebaseio.com",
+});
 const db = admin.firestore();
 
 const express = require("express");
@@ -43,7 +48,7 @@ const helloWorld = functions.https.onRequest((request, response) => {
   // Add a new document in collection "cities" with ID 'LA'
   let setDoc = db
     .collection("main")
-    .doc("LA")
+    .doc("Jatin")
     .set(data)
     .then((data) => console.log("created", data))
     .catch((err) => console.log("error", err));
