@@ -1,0 +1,23 @@
+installing and setting up firebase admin SDK
+    - npm install firebase-admin --save
+    - refer to the link : https://firebase.google.com/docs/admin/setup
+    - refer to the Intitialize without parameters section in the above link.
+
+installing and setting up firebase functions
+    - refer to the link : https://firebase.google.com/docs/functions/get-started
+
+installing and setting up firebase emulator 
+    - refer to the link : https://firebase.google.com/docs/emulator-suite/install_and_configure
+
+    - if error related to java not found - 
+        - installation in ubuntu 18.04
+            Run the following commands :
+            - sudo apt-get update
+            - sudo apt-get install default-jdk
+            - Or refer to : https://linuxize.com/post/install-java-on-ubuntu-18-04/
+
+        - if firestore emulator does not work 
+            - go to the Project Setting of the project in firebase console
+            - Choose Service Accounts
+            - generate the private key
+            - and refer to the given code 
