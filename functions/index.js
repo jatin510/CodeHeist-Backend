@@ -21,6 +21,9 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(cookieParser());
 
+// routes to the different links
+app.use("/api/", require("./routes/api/index.js"));
+
 app.get("/", (req, res) => {
   console.log("API CALLED");
   // db.collection("main").add("jatin").set({ name: "jatin" });
