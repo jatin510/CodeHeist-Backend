@@ -16,8 +16,8 @@ installing and setting up firebase emulator
             - sudo apt-get install default-jdk
             - Or refer to : https://linuxize.com/post/install-java-on-ubuntu-18-04/
 
-        - if firestore emulator does not work 
-            - go to the Project Setting of the project in firebase console
-            - Choose Service Accounts
-            - generate the private key
-            - and refer to the given code 
+    - if firestore emulator does not work 
+        - go to the Project Setting of the project in firebase console
+        - Choose Service Accounts
+        - generate the private key
+        - and refer to the given code 
